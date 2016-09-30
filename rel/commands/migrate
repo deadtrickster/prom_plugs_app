@@ -1,0 +1,19 @@
+set +e
+
+while true; do
+  nodetool ping 2&>1
+  EXIT_CODE=$?
+  if [ $EXIT_CODE -eq 0 ]; then
+    echo "Application is up!"
+    break
+  else
+    echo "Waiting for application to start ..."
+    sleep 2
+  fi
+done
+
+set -e
+
+echo "Running migrations"
+bin/prom_plugs_app rpc Elixir.Release.Tasks migrate
+echo "Migrations run successfully"

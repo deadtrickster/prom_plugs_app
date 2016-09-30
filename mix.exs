@@ -27,6 +27,7 @@ defmodule PromPlugsApp.Mixfile do
      {:plug, "~> 1.2"},
      {:poison, "~> 2.2"},
      {:postgrex, "~> 0.12"},
+     {:distillery, "~> 0.9"},
      {:ecto, "~> 2.0"},
      {:prometheus, "~> 3.0"},
      {:prometheus_plugs, "~> 1.0"}
