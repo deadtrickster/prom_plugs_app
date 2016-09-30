@@ -2,7 +2,7 @@
 ===========================
 
 1) Prometheus_plugs disabled (commented)
-
+```
 ~/wrk/wrk -d30s -c256 -t16 http://localhost:8088/profiles/1/
 Running 30s test @ http://localhost:8088/profiles/1/
   16 threads and 256 connections
@@ -12,9 +12,9 @@ Running 30s test @ http://localhost:8088/profiles/1/
   1676601 requests in 30.10s, 427.22MB read
 Requests/sec:  55703.20
 Transfer/sec:     14.19MB
-
+```
 2) Prometheus_plugs enabled:
-
+```
 ~/wrk/wrk -d30s -c256 -t16 http://localhost:8088/profiles/1/
 Running 30s test @ http://localhost:8088/profiles/1/
   16 threads and 256 connections
@@ -24,6 +24,6 @@ Running 30s test @ http://localhost:8088/profiles/1/
   875530 requests in 30.01s, 223.09MB read
 Requests/sec:  29176.49
 Transfer/sec:      7.43MB
+```
 
-
-Please also see screenshots (cpu load).
+**Please also see screenshots (cpu load).**
