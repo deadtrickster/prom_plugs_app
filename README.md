@@ -1,1 +1,2 @@
-# prom_plugs_test_app
+# Prometheus plugs performance test app
+===========================
