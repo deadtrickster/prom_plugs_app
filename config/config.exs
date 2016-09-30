@@ -17,5 +17,7 @@ config :prometheus, PromPlugsApp.PlugPipelineInstrumenter,
   ], registry: :default,
   duration_unit: :microseconds
 
+config :prom_plugs_app, PromPlugsApp.HTTP,
+  port: 8088
 
 import_config "#{Mix.env}.exs"
