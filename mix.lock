@@ -10,7 +10,7 @@
   "poison": {:hex, :poison, "2.2.0", "4763b69a8a77bd77d26f477d196428b741261a761257ff1cf92753a0d4d24a63", [:mix], []},
   "poolboy": {:hex, :poolboy, "1.5.1", "6b46163901cfd0a1b43d692657ed9d7e599853b3b21b95ae5ae0a777cf9b6ca8", [:rebar], []},
   "postgrex": {:hex, :postgrex, "0.12.1", "2f8b46cb3a44dcd42f42938abedbfffe7e103ba4ce810ccbeee8dcf27ca0fb06", [:mix], [{:connection, "~> 1.0", [hex: :connection, optional: false]}, {:db_connection, "~> 1.0-rc.4", [hex: :db_connection, optional: false]}, {:decimal, "~> 1.0", [hex: :decimal, optional: false]}]},
-  "prometheus": {:hex, :prometheus, "3.0.0", "f868b68e9532e4bed456216e06b6c0f8527dfeca103544e7faabd33282b040ea", [:rebar3], []},
+  "prometheus": {:git, "https://github.com/deadtrickster/prometheus.erl.git", "1ca89111cdd653cbf5ef4eef32b69a7daed327df", [branch: "ets_schedulers"]},
   "prometheus_ex": {:hex, :prometheus_ex, "1.0.0", "031e4f7e7db1623facc2c6b7f9e7cd4e50ff825afa15831889db32ed7c986fd9", [:mix], [{:prometheus, "~> 3.0", [hex: :prometheus, optional: false]}]},
   "prometheus_plugs": {:hex, :prometheus_plugs, "1.0.0", "a5397c4747359f20a154a1d9b6839601f8ce08ecd14da0f116a3dde795a6661b", [:mix], [{:cowboy, "~> 1.0.0", [hex: :cowboy, optional: false]}, {:plug, "~> 1.0", [hex: :plug, optional: false]}, {:prometheus_ex, "~> 1.0.0", [hex: :prometheus_ex, optional: false]}, {:prometheus_process_collector, "~> 1.0.0", [hex: :prometheus_process_collector, optional: true]}]},
   "ranch": {:hex, :ranch, "1.2.1", "a6fb992c10f2187b46ffd17ce398ddf8a54f691b81768f9ef5f461ea7e28c762", [:make], []}}

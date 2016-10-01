@@ -6,7 +6,7 @@ defmodule PromPlugsApp do
   end
 
   def start(_type, _args) do
-
+    :prometheus_sup.start_link()
     PromPlugsApp.PlugPipelineInstrumenter.setup()
     PromPlugsApp.MetricsExporter.setup()
 

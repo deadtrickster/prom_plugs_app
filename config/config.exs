@@ -20,4 +20,8 @@ config :prometheus, PromPlugsApp.PlugPipelineInstrumenter,
 config :prom_plugs_app, PromPlugsApp.HTTP,
   port: 8088
 
-import_config "#{Mix.env}.exs"
+#import_config "#{Mix.env}.exs"
+
+config :logger,
+  level: :warn,
+  truncate: 4096

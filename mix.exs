@@ -29,7 +29,7 @@ defmodule PromPlugsApp.Mixfile do
      {:postgrex, "~> 0.12"},
      {:distillery, "~> 0.9"},
      {:ecto, "~> 2.0"},
-     {:prometheus, "~> 3.0"},
+     {:prometheus, git: "https://github.com/deadtrickster/prometheus.erl.git", branch: "ets_schedulers", override: true},
      {:prometheus_plugs, "~> 1.0"}
    ]
   end
